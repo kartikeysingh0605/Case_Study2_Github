@@ -1,0 +1,414 @@
+{
+  "image": "C:\\Users\\HP\\Documents\\Gear_Assembly_CV\\test_images\\test_06.png",
+  "stage": "7E (experimental Stages 5B-5E + explicit decision policy)",
+  "verdict": "NOT OK",
+  "binary_fallback": "NOT OK",
+  "reason": "Suspected missing or misplaced visible required component(s)",
+  "detectors_validated": false,
+  "decision_policy": "visible-proxy",
+  "conditional_ok": false,
+  "assumptions_used": [
+    "Assume the hidden motor body is installed when the visible pinion, mounting plate, both mounting screw regions and plug all pass their appearance checks; NOT directly visible."
+  ],
+  "waived_checks": [
+    "Motor body (behind mount/pinion)"
+  ],
+  "suspected_parts": [
+    "Idler gear"
+  ],
+  "review_parts": [
+    "Idler circlip"
+  ],
+  "seconds": 0.186,
+  "component_results": [
+    {
+      "component": "Brass output gear",
+      "reference_scores": [
+        0.794,
+        0.7866,
+        0.785
+      ],
+      "test_score": 0.7831,
+      "threshold": 0.5888,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Idler gear",
+      "reference_scores": [
+        0.8859,
+        0.8757,
+        0.8725
+      ],
+      "test_score": 0.4677,
+      "threshold": 0.6544,
+      "status": "SUSPECT MISSING"
+    },
+    {
+      "component": "Compound gear",
+      "reference_scores": [
+        0.8944,
+        0.8917,
+        0.8952
+      ],
+      "test_score": 0.8808,
+      "threshold": 0.6688,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Motor pinion gear",
+      "reference_scores": [
+        0.9278,
+        0.866,
+        0.8759
+      ],
+      "test_score": 0.8443,
+      "threshold": 0.6495,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Top-left Bolt head",
+      "reference_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_score": 1.0,
+      "threshold": 0.75,
+      "status": "POSSIBLY PRESENT",
+      "bolt_shape_check": {
+        "brightness_method": "mean(core r<=13) - mean(washer 24<=r<=33)",
+        "reference_core_contrasts": [
+          -17.19,
+          -21.634,
+          -19.914
+        ],
+        "test_core_contrast": -24.212,
+        "core_contrast_limit": -9.19,
+        "contrast_anomaly": false,
+        "edge_method": "Canny edge count in central 18px disk",
+        "reference_edge_counts": [
+          24,
+          23,
+          21
+        ],
+        "test_edge_count": 19,
+        "edge_threshold": 13.65,
+        "shape_evidence": "ENABLED"
+      }
+    },
+    {
+      "component": "Top-left Washer",
+      "reference_scores": [
+        0.8875,
+        0.8825,
+        0.8806
+      ],
+      "test_score": 0.8725,
+      "threshold": 0.6605,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Top-right Bolt head",
+      "reference_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_score": 1.0,
+      "threshold": 0.75,
+      "status": "POSSIBLY PRESENT",
+      "bolt_shape_check": {
+        "brightness_method": "mean(core r<=13) - mean(washer 24<=r<=33)",
+        "reference_core_contrasts": [
+          -25.146,
+          -23.585,
+          -23.813
+        ],
+        "test_core_contrast": -19.16,
+        "core_contrast_limit": -15.585,
+        "contrast_anomaly": false,
+        "edge_method": "Canny edge count in central 18px disk",
+        "reference_edge_counts": [
+          5,
+          8,
+          12
+        ],
+        "test_edge_count": 16,
+        "edge_threshold": null,
+        "shape_evidence": "NOT RELIABLE IN REFERENCES"
+      }
+    },
+    {
+      "component": "Top-right Washer",
+      "reference_scores": [
+        0.85,
+        0.855,
+        0.8588
+      ],
+      "test_score": 0.8662,
+      "threshold": 0.6375,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Bottom-left Bolt head",
+      "reference_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_score": 1.0,
+      "threshold": 0.75,
+      "status": "POSSIBLY PRESENT",
+      "bolt_shape_check": {
+        "brightness_method": "mean(core r<=13) - mean(washer 24<=r<=33)",
+        "reference_core_contrasts": [
+          -20.199,
+          -21.978,
+          -21.385
+        ],
+        "test_core_contrast": -23.366,
+        "core_contrast_limit": -12.199,
+        "contrast_anomaly": false,
+        "edge_method": "Canny edge count in central 18px disk",
+        "reference_edge_counts": [
+          19,
+          18,
+          17
+        ],
+        "test_edge_count": 16,
+        "edge_threshold": 11.05,
+        "shape_evidence": "ENABLED"
+      }
+    },
+    {
+      "component": "Bottom-left Washer",
+      "reference_scores": [
+        0.8525,
+        0.85,
+        0.8506
+      ],
+      "test_score": 0.85,
+      "threshold": 0.6375,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Bottom-right Bolt head",
+      "reference_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_score": 1.0,
+      "threshold": 0.75,
+      "status": "POSSIBLY PRESENT",
+      "bolt_shape_check": {
+        "brightness_method": "mean(core r<=13) - mean(washer 24<=r<=33)",
+        "reference_core_contrasts": [
+          -25.318,
+          -25.261,
+          -24.467
+        ],
+        "test_core_contrast": -21.44,
+        "core_contrast_limit": -16.467,
+        "contrast_anomaly": false,
+        "edge_method": "Canny edge count in central 18px disk",
+        "reference_edge_counts": [
+          0,
+          7,
+          0
+        ],
+        "test_edge_count": 10,
+        "edge_threshold": null,
+        "shape_evidence": "NOT RELIABLE IN REFERENCES"
+      }
+    },
+    {
+      "component": "Bottom-right Washer",
+      "reference_scores": [
+        0.825,
+        0.825,
+        0.8281
+      ],
+      "test_score": 0.8319,
+      "threshold": 0.6187,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Output gear nut",
+      "reference_scores": [
+        0.3078,
+        0.2275,
+        0.2044
+      ],
+      "test_score": 0.1813,
+      "threshold": 0.1328,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Idler circlip",
+      "reference_scores": [
+        0.8351,
+        0.787,
+        0.7648
+      ],
+      "test_score": 0.0,
+      "threshold": 0.4971,
+      "status": "NOT ASSESSABLE (idler gear suspected missing)"
+    },
+    {
+      "component": "Compound circlip",
+      "reference_scores": [
+        0.8134,
+        0.7241,
+        0.6971
+      ],
+      "test_score": 0.6411,
+      "threshold": 0.4531,
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Idler bearing block (visible support)",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.6169,
+      "threshold": 0.5408,
+      "good_reference_consistency": [
+        0.9013,
+        0.9543,
+        0.9543
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Compound bearing block (visible support)",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.9532,
+      "threshold": 0.5517,
+      "good_reference_consistency": [
+        0.9194,
+        0.9778,
+        0.9778
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Idler bearing screw A",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.9315,
+      "threshold": 0.5365,
+      "good_reference_consistency": [
+        0.9133,
+        0.9109,
+        0.8942
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Idler bearing screw B",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.8648,
+      "threshold": 0.45,
+      "good_reference_consistency": [
+        0.5663,
+        0.5672,
+        0.5111
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Compound bearing screw A",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.9177,
+      "threshold": 0.45,
+      "good_reference_consistency": [
+        0.6529,
+        0.6529,
+        0.585
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Compound bearing screw B",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.8399,
+      "threshold": 0.45,
+      "good_reference_consistency": [
+        0.6903,
+        0.5439,
+        0.6903
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Motor mounting plate (visible corner)",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.9676,
+      "threshold": 0.5151,
+      "good_reference_consistency": [
+        0.8584,
+        0.863,
+        0.863
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Motor mounting screw A (tentative ROI)",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.9537,
+      "threshold": 0.45,
+      "good_reference_consistency": [
+        0.832,
+        0.7919,
+        0.6515
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Motor mounting screw B (tentative ROI)",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.8975,
+      "threshold": 0.4834,
+      "good_reference_consistency": [
+        0.9044,
+        0.8056,
+        0.9045
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Cable connector (plug position)",
+      "method": "local template NCC (visual proxy)",
+      "test_score": 0.9948,
+      "threshold": 0.5915,
+      "good_reference_consistency": [
+        0.9859,
+        0.9894,
+        0.9894
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Output gear washer (outer visible band)",
+      "method": "metal pixels in an annulus, nut-dependent",
+      "test_score": 0.3229,
+      "threshold": 0.1936,
+      "reference_scores": [
+        0.2979,
+        0.3107,
+        0.3158
+      ],
+      "status": "POSSIBLY PRESENT"
+    },
+    {
+      "component": "Motor body (behind mount/pinion)",
+      "method": "not independently visible",
+      "test_score": null,
+      "threshold": null,
+      "status": "NOT ASSESSABLE (motor body not independently visible)"
+    }
+  ],
+  "warnings": [
+    "Presence scores do not prove correct component geometry or placement.",
+    "Hidden motor body is not independently visible. Visible-proxy policy assumes its presence from five visible motor-related checks.",
+    "Binary fallback NOT OK for review cases does NOT mean a verified physical fault."
+  ]
+}

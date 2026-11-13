@@ -1,0 +1,7 @@
+# Approach write-up (approximately 200 words)
+
+I built a CPU-only OpenCV inspection pipeline for the fixed-camera gear assembly. The program first detects the blue base plate by color segmentation and normalizes its perspective, reducing the effect of small shifts and rotations. After alignment, it checks predefined regions for the expected gears, bolts, washers, circlips, bearing hardware, motor-associated components and connector. It combines color, appearance and edge evidence to flag components that appear absent or misplaced.
+
+I chose deterministic image processing because the task provides only three correct reference images and no labelled faulty examples; training a fault detector on this dataset would be difficult to justify. The pipeline accepts a single image or an entire folder from the command line, prints per-image verdicts, creates annotated PNG and JSON evidence, and writes a summary CSV. The six provided test images and their generated annotations are included for review.
+
+A significant ambiguity is the motor body, which is not directly visible from this viewpoint. The default strict mode fails closed when it cannot verify the hidden part; an optional visible-proxy mode explicitly treats a passing set of motor-related features as a conditional assumption. Performance depends on lighting, the visibility of small parts, the blue plate being locatable, and the similarity of unseen assemblies to the reference layout. Predictions should be verified against independent fault labels.

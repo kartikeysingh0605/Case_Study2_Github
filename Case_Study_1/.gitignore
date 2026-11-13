@@ -1,0 +1,9 @@
+# Keep locally generated files and environments out of Git
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.log
+output/live_check/
+output/new_batch/

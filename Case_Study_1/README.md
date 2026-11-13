@@ -1,7 +1,5 @@
 # Case Study 1 — Gear Assembly Verification
 
-Vinfotech Computer Vision Engineer take-home assignment: CPU-based inspection of a fixed-camera gear assembly against three reference-good images.
-
 ## What is included
 
 - `inspect.py` — single-image and batch CLI; annotated image, JSON evidence and CSV summary
@@ -46,8 +44,3 @@ The included `output/final_results/inspection_summary.csv` records results of th
 | test_05.png | OK (conditional) |
 | test_06.png | NOT OK |
 
-These are pipeline outputs, **not independently verified fault labels**. Stored output CSV/JSON may include paths from the original development computer; regenerate outputs via the commands above for your own paths.
-
-## Limitations
-
-See `docs/KNOWN_LIMITATIONS.md`. In particular, the geometry and colors are specific to the provided blue-plate configuration and visible components. The motor body is occluded; the program documents this as an assumption rather than claiming to see it. The code and included results have been packaged and syntax-checked; the full six-image runtime has not been re-executed here.

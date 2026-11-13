@@ -1,0 +1,11 @@
+﻿.venv/
+__pycache__/
+*.pyc
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pt
+outputs_reproduced/
+.DS_Store
+Thumbs.db

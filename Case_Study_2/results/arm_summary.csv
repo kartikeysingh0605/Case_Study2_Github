@@ -1,0 +1,5 @@
+arm,entered_vehicles,max_observed_queue,avg_wait_s,max_wait_s,observed_waits
+North,30,3,16.73,27.23,3
+South,87,1,13.31,19.6,7
+East,59,4,31.92,58.03,14
+West,28,3,25.0,63.47,4

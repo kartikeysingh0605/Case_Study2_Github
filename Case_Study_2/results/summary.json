@@ -1,0 +1,74 @@
+{
+  "warning": "REVIEW BUILD: counts unvalidated; stop lines/queue regions must be calibrated against the original footage.",
+  "video": "..\\trafic.mp4",
+  "source_fps": 30.0,
+  "source_frames": 19699,
+  "processed_frames": 19699,
+  "analyzed_fps": 30.0,
+  "entry_counts": {
+    "North": 30,
+    "South": 87,
+    "East": 59,
+    "West": 28
+  },
+  "turning_counts": {
+    "North": {
+      "North": 0,
+      "South": 8,
+      "East": 1,
+      "West": 0
+    },
+    "South": {
+      "North": 53,
+      "South": 0,
+      "East": 0,
+      "West": 11
+    },
+    "East": {
+      "North": 6,
+      "South": 12,
+      "East": 1,
+      "West": 12
+    },
+    "West": {
+      "North": 2,
+      "South": 0,
+      "East": 22,
+      "West": 0
+    }
+  },
+  "max_observed_queues": {
+    "North": 3,
+    "South": 1,
+    "East": 4,
+    "West": 3
+  },
+  "wait_stats": {
+    "North": {
+      "observed_waits": 3,
+      "mean_wait_s": 16.73,
+      "max_wait_s": 27.23
+    },
+    "South": {
+      "observed_waits": 7,
+      "mean_wait_s": 13.31,
+      "max_wait_s": 19.6
+    },
+    "East": {
+      "observed_waits": 14,
+      "mean_wait_s": 31.92,
+      "max_wait_s": 58.03
+    },
+    "West": {
+      "observed_waits": 4,
+      "mean_wait_s": 25.0,
+      "max_wait_s": 63.47
+    }
+  },
+  "unresolved_entered_tracks": 76,
+  "completed_movement_tracks": 128,
+  "all_seen_track_ids": 2514,
+  "tracks_under_half_second": 1508,
+  "same_arm_movements_candidate": 1,
+  "geometry_status": "REVIEW DRAFT: geometry validity checked; lane alignment, direction and counts NOT yet ground-truth validated."
+}

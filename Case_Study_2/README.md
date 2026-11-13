@@ -1,4 +1,4 @@
-# Vinfotech CV Engineer — Case Study 2: Traffic Intersection Analytics
+# Case Study 2: Traffic Intersection Analytics
 
 **Submission candidate: V2 (full video run)** · **Status: preliminary estimates, not independently verified ground truth**.
 
